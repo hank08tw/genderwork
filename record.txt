@@ -1,0 +1,70 @@
+    wrong data!!!
+    batch_size = 16  # batch size
+    use_gpu = True  # user GPU or not
+    num_workers = 4  # how many workers for loading data
+    print_freq = 20  # print info every N batch
+
+    debug_file = '/tmp/debug'  # if os.path.exists(debug_file): enter ipdb
+    result_file = 'result.csv'
+
+    max_epoch = 50
+    lr = 0.001  # initial learning rate
+    lr_decay = 0.55  # when val_loss increase, lr = lr*lr_decay
+    weight_decay = 0e-5  # 损失函数
+
+    lr_decay_epoch = 100 #多少個epoch會自動減少learning rate lr = lr * opt.lr_decay
+    model: checkpoints/resnet34_0108_12:28:33.pth
+    train accuracy: 88.70370370370371
+    test accuracy: 85.83333333333333
+
+
+
+
+
+
+    ???
+    batch_size = 16  # batch size
+    use_gpu = True  # user GPU or not
+    num_workers = 4  # how many workers for loading data
+    print_freq = 20  # print info every N batch
+
+    debug_file = '/tmp/debug'  # if os.path.exists(debug_file): enter ipdb
+    result_file = 'result.csv'
+
+    max_epoch = 120
+    lr = 0.001  # initial learning rate
+    lr_decay = 0.7  # when val_loss increase, lr = lr*lr_decay
+    weight_decay = 0e-5  # 损失函数
+
+    lr_decay_epoch = 200 #多少個epoch會自動減少learning rate lr = lr * opt.lr_decay
+    train acc: 95.83333333333333
+    test acc: 12.5
+
+
+
+
+
+    good!!!
+    resnet34_0108_19:39:27.pth
+    batch_size = 16  # batch size
+    use_gpu = True  # user GPU or not
+    num_workers = 4  # how many workers for loading data
+    print_freq = 20  # print info every N batch
+
+    debug_file = '/tmp/debug'  # if os.path.exists(debug_file): enter ipdb
+    result_file = 'result.csv'
+
+    max_epoch = 60
+    lr = 0.001  # initial learning rate
+    lr_decay = 0.55  # when val_loss increase, lr = lr*lr_decay
+    weight_decay = 0e-5  # 损失函数
+
+    lr_decay_epoch = 200 #多少個epoch會自動減少learning rate lr = lr * opt.lr_decay
+    train acc: 96.48148148148148
+    test acc: 93.33333333333333
+
+
+
+    good!!!
+    resnet34_0108_17:35:50.pth
+    test acc: 95.0
